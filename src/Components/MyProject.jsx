@@ -13,7 +13,8 @@ const MyProject = () => {
                 <p className='mt-6 '><span className='text-green-600 font-semibold '>- Technologies Used :  </span>    HTML5 , CSS3, JavaScript, React.js, TailwindCSS.</p>
                 <p className='mt-6 '><span className='text-green-600 font-semibold '>- Challenges :  </span>  Making the portfolio <span className='text-green-600 font-semibold '>fully responsive  </span >on all devices.</p>
                 <p className='mt-6 '><span className='text-green-600 font-semibold'>- Solution :  </span> Utilized Tailwind CSS's responsive utilities and also using <span className='text-green-600 font-semibold '>ChatGPT-3.5 </span> to ensure the website looks good on all screen sizes.</p>
-                <p className='mt-6 '><span className='text-green-600 font-semibold '>- Source Code :  </span> [.........]</p>
+                <p className='mt-6 '><span className='text-green-600 font-semibold '>- Source Code : [</span> <span className='text-blue-600 underline underline-offset-2 '><a href="https://github.com/uzma-a/portfolio" target="_blank" rel="noopener noreferrer"></a></span>  <a href="https://github.com/uzma-a/portfolio" target="_blank" rel="noopener noreferrer"><span className='text-blue-600 underline underline-offset-2 '>https://github.com/uzma-a/portfolio</span></a> <span className='text-green-600 font-semibold '> ]</span> </p>
+                
             </div>
 
             <div className="paragraph mt-20 flex flex-col">
