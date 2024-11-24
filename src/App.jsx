@@ -19,13 +19,14 @@ function App() {
     <Route path='/' element={<Portfolio/>} />
     <Route path='/about' element={<PortfolioCategory/>} />
     <Route path='/github' element={<PortfolioCategory/>} />
-    <Route path='/contact' element={<PortfolioCategory/>} />
+    {/* <Route path='/contactme' element={<PortfolioCategory/>} /> */}
     <Route path='/github' element={<PortfolioCategory/>} />
 
-    <Route path='/login' element={<LoginSignup/>} />
+    <Route path='/contact' element={<LoginSignup/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>
+    
      
     </>
   )

@@ -27,7 +27,7 @@ const LoginSignup = () => {
   return (
     <div className='loginsignup w-full min-h-screen pt-20 bg-#f0f0f0 font-poppins '>
       <div className="loginsignup-container mx-auto  h-auto w-full p-6 max-w-lg shadow-md rounded-full">
-        <h1 className='font-semibold text-2xl md:text-4xl'>Contact Me</h1>
+        <h1 className='font-semibold text-slate-200 text-2xl md:text-4xl'>Contact Me</h1>
         <form onSubmit={onSubmit} className="loginsignup-fields mt-6 flex flex-col gap-4 ">
         <input type="text" name="name" placeholder='Your Name' className='w-full h-12 md:h-16 border-solid border-2 border-blue-900 rounded-sm pl-4 text-black'/>
         <input type="email" name="email" placeholder='Your Email'  className='w-full h-12  md:h-16 border-solid border-2 border-blue-900 rounded-sm pl-4 text-black'/>
