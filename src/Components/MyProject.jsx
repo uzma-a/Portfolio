@@ -74,10 +74,22 @@ const MyProject = () => {
             <div className="paragraph mt-20 flex flex-col text-slate-200">
                 <h1 className='text-3xl text-center text-white font-semibold'>Project 4 : <span className='text-violet-500 font-semibold underline underline-offset-2 decoration-2'>Gemini Clone</span></h1>
                 <p className='mt-10 text-lg'>I developed a Gemini clone to gain practical experience with APIs and AI technologies. This project involved integrating various APIs and implementing AI functionalities to closely replicate the Gemini platform's features. Additionally, I included a dark mode theme to enhance user experience and demonstrate my skills in creating adaptable and visually appealing interfaces.</p>
+                <p className='mt-6 font-bold'>
+  <span className='text-blue-400 font-semibold'>- Technologies Used : </span> HTML5, CSS3, JavaScript, React.js, TailwindCSS, GoogleGenerativeAI (API Key).
+</p>
+
+<p className='mt-6'>
+  <span className='text-blue-400 font-semibold'>- Challenges : </span> Making the Gemini Clone <span className='bg-gradient-to-r from-yellow-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>fully responsive</span> across various devices while integrating AI functionality.
+</p>
+
+<p className='mt-6'>
+  <span className='text-blue-400 font-semibold'>- Solution : </span> Utilized Tailwind CSS's responsive utilities to make the design fully adaptable. Integrated Google Generative AI (API Key) to enhance the clone’s interactivity and ensure it responds to users dynamically.
+</p>
 
 
                 <p className='mt-6 '><span className='text-blue-400 font-semibold '>- Visit Link :   [ <a href="https://gemini-ui.netlify.app/" target="_blank" rel="noopener noreferrer"><span className='text-blue-700 underline underline-offset-2'>https://gemini-ui.netlify.app/</span></a> ]</span></p>
                 <p className='mt-6 '><span className='text-blue-400 font-semibold '>- Source Code : [ <a href="https://github.com/uzma-a/Gemini-Clone" target="_blank" rel="noopener noreferrer"><span className='text-blue-700 underline underline-offset-2'>https://github.com/uzma-a/Gemini-Clone</span></a> ] </span> </p>
+                
             </div>
 
             <div className="paragraph mt-20 flex flex-col text-slate-200">
