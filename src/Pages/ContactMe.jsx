@@ -1,6 +1,6 @@
 import React from 'react'
 
-const LoginSignup = () => {
+const ContactMe = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -39,5 +39,5 @@ const LoginSignup = () => {
   )
 }
 
-export default LoginSignup
+export default ContactMe
 

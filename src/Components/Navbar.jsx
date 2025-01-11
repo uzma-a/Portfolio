@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex gap-6">
             <ul className='flex gap-8 cursor-pointer items-center'>
-              <li onClick={() => { setMenu("github") }}>
+              <li data-aos='fade-left' onClick={() => { setMenu("github") }}>
                 <a to='/github' href="https://github.com/uzma-a" target="_blank" rel="noopener noreferrer"><button className='text-black bg-slate-200 hover:bg-slate-300 hover:ring-gray-400 m-3  rounded-full flex  justify-between items-center ring-black ring-2 p-1'>
 
                   <img src={github} alt="" />
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </button></a>{menu === "github" ? <hr /> : <></>}
               </li>
 
-              <li onClick={() => { setMenu("linkedin") }}>
+              <li data-aos='fade-left' onClick={() => { setMenu("linkedin") }}>
                 <a to='/linkedin' href="https://www.linkedin.com/in/uzma-aashiya-700a46316/" target="_blank" rel="noopener noreferrer"><button className='text-black bg-slate-200 hover:bg-blue-500 hover:ring-gray-400  rounded-full flex  justify-center items-center ring-black ring-2 p-1.5'>
 
                   <img src={linkedIn} alt="" />
@@ -38,8 +38,8 @@ const Navbar = () => {
               </li>
 
 
-              <Link to='/contact'>
-                <button className='bg-slate-200 font-semibold p-2 rounded-full text-black ring-black ring-2 hover:bg-slate-300 hover:ring-gray-400'>
+              <Link to='/contactme'>
+                <button data-aos='fade-left' className='bg-slate-200 font-semibold p-2 rounded-full text-black ring-black ring-2 hover:bg-slate-300 hover:ring-gray-400'>
                  Contact me
                 </button>
               </Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
               </li>
 
 
-            <Link to='/contact'>
+            <Link to='/contactme'>
               
               <button onClick={() => setIsOpen(false)} className='bg-slate-200 font-semibold p-2 rounded-full text-black ring-black ring-2 hover:bg-slate-300 hover:ring-gray-400'>
                  Contact me

@@ -1,0 +1,33 @@
+/* Loading.css */
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(45deg, #030143, rgb(2, 3, 14), #030143);
+    color: #00359e; /* Matches gym theme */
+    font-family: Arial, sans-serif;
+  }
+   
+  p{
+    font-weight: 800;
+  }
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #070707;
+    border-top: 5px solid #00359e;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 15px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

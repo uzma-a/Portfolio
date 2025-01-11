@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 const Main = () => {
   return (
     <div>
-      <div className="main flex flex-nowrap gap-4 justify-around text-slate-900 p-4 font-semibold custom:flex-wrap custom:gap-4 bg-slate-200">
+      <div className="main flex flex-nowrap gap-4 justify-around text-slate-900 p-4 font-semibold custom:flex-wrap custom:gap-4 bg-slate-300">
         <div className="left text-4xl p-6 mt-20">
           Hey, My name is <span className='text-blue-600 font-semibold'>Uzma,</span>
           <p>a Creative and Passionate</p>

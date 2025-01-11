@@ -15,10 +15,10 @@ return (
         {/* Main Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           {/* Contact Section */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Contact Me</h2>
-            <p className="text-base sm:text-sm md:text-base lg:text-lg">
-              Email:<span className="px-1 text-lg sm:text-base md:text-lg">uzmaaasia444@gmail.com</span>
+          <div className='font-semibold'>  
+            <h2 className="text-2xl md:text-3xl  mb-4">Contact Me</h2>
+            <p className="text-base font-medium sm:text-sm md:text-base lg:text-lg">
+              Email:<span className="px-1  text-lg sm:text-base md:text-lg">uzmaaasia444@gmail.com</span>
             </p>
           </div>
 
@@ -36,8 +36,8 @@ return (
         </div>
 
         {/* Divider and Footer Text */}
-        <hr className="border-gray-700 my-8" />
-        <p className="text-center text-sm sm:text-base">
+        <hr className="border-gray-700 my-8 " />
+        <p className="text-center font-semibold text-sm sm:text-base">
           &copy; 2024 Uzma. All rights reserved.
         </p>
       </div>
