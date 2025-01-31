@@ -33,7 +33,7 @@ const MyProject = () => {
                 </p>
                 <p className='mt-8 text-lg font-medium'>
                     I developed <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>FitHub</span>,
-                    my latest <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>full-stack project</span>, which boasts an <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>attractive</span>, responsive UI  with <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>LoginSignup</span>  functionality and a <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>Razorpay payment gateway</span>.
+                    my latest <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>full-stack project</span>, which boasts an <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>attractive</span>, responsive UI  with <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>Register</span>  functionality.
                     FitHub is a modern and fully <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>responsive website</span>  for a gym, featuring sections such as Home, Services, Trainers, Membership Plans, and Contact.
                     This project demonstrates my ability to create <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>user-friendly</span>  designs and implement <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>real-world</span> solutions with a sleek UI, built using
                     <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl px-1'>React.js</span>
@@ -43,18 +43,9 @@ const MyProject = () => {
 
                 <p className='mt-6 font-semibold'>
                     <span className='text-cyan-300 font-semibold'>- Technologies Used: </span>
-                    JavaScript, React.js, TailwindCSS, Node.js, Express.js, MongoDB Compass, Razorpay.
+                    JavaScript, React.js, TailwindCSS, Node.js, Express.js, MongoDB.
                 </p>
 
-                <p className='mt-6 font-semibold'>
-                    <span className='text-cyan-300 font-semibold'>- Challenges: </span>
-                    Integrating the <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>Razorpay</span> payment gateway for seamless membership plan purchases.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-cyan-300 font-semibold'>- Solution: </span>
-                    Successfully integrated <span className='bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>Razorpay</span> with proper API handling and responsive design, ensuring a smooth user experience across all devices.
-                </p>
 
                 <p className='mt-6 font-medium'>
                     <span className='text-blue-400 font-semibold '>- Source Code : [</span>
@@ -69,11 +60,11 @@ const MyProject = () => {
 
                 <p className='mt-6'>
                     <span className='font-bold text-blue-500'>- Visit Link : [
-                        <a href="https://fithub-website.vercel.app/" target="_blank" rel="noopener noreferrer" className=" font-medium text-blue-600 px-1 underline">
-                        https://fithub-website.vercel.app/
+                        <a href="https://fithub-website.netlify.app/" target="_blank" rel="noopener noreferrer" className=" font-medium text-blue-600 px-1 underline">
+                        https://fithub-website.netlify.app/
                         </a>
                         ]</span>
-                </p>
+                </p> 
 
             </div>
 
