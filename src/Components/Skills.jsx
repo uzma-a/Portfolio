@@ -78,7 +78,7 @@ const Skills = () => {
           <div className="headings flex flex-col items-center p-6">
             <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center text-center'>Additional Tools:</h1>
             <ul className='list-disc mt-2 text-blue-950  font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
-              <li>npm</li>
+              <li>Redux</li>
               <li>APIs</li>
               <li>ChatGPT-3.5</li>
               <li>Postman</li>
@@ -87,12 +87,13 @@ const Skills = () => {
           </div>
         </div>
         <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col items-center">
-          <img className='bg-cover w-full rounded-lg' src="https://pmtips.net/Portals/0/project-deployment-phase.jpg" />
+          <img className='bg-cover w-full rounded-lg' src="https://www.horilla.com/wp-content/uploads/2024/01/django-deployment-and-hosting-technical-step-by-step-guide.jpg" />
           <div className="headings flex flex-col items-center p-6">
             <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center te text-center'>Deployment and Hosting:</h1>
             <ul className='list-disc mt-2 text-blue-950  font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
               <li>Netlify</li>
               <li>Vercel</li>
+              <li>Render</li>
             </ul>
           </div>
         </div>
