@@ -12,7 +12,7 @@ const Main = () => {
             <p className='text-blue-600 font-semibold'>
               <Typewriter
                 options={{
-                  strings: ['Full Stack Developer', 'Front-end Developer'],
+                  strings: ['Full Stack Web Developer', 'Front-end Developer'],
                   autoStart: true,
                   loop: true,
                   pauseFor: 1000,
