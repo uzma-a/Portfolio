@@ -74,7 +74,7 @@ const Skills = () => {
           </div>
         </div>
         <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col items-center">
-          <img className='bg-cover w-full rounded-lg' src="https://www.freecodecamp.org/news/content/images/2023/03/coverchaat.jpg" />
+          <img className='bg-cover w-full rounded-lg' src="https://media.licdn.com/dms/image/v2/D4D12AQGzhMUpjQ1pDA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1681020631764?e=2147483647&v=beta&t=HCVdq4KyxMd1y8Yu7BR9QAUkwafbDP-sLwxu4E6BRm0" />
           <div className="headings flex flex-col items-center p-6">
             <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center text-center'>Additional Tools:</h1>
             <ul className='list-disc mt-2 text-blue-950  font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
