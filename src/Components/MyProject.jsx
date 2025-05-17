@@ -68,15 +68,15 @@ const MyProject = () => {
                 </p>
 
                 <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Live Demo:</span>
-                    [ <a href="https://eventify-frontend-hyvw.onrender.com/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-600 underline underline-offset-2'>Eventify Website</span></a> ]
+                    <span className='text-blue-400 font-semibold'>- Live Demo: </span>
+                     <a href="https://eventify-frontend-hyvw.onrender.com/" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-600 underline underline-offset-2'>Eventify Website</span></a> 
                 </p>
 
                 <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Source Code:</span>
-                    [ <a href="https://github.com/uzma-a/eventify-repo" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-600 underline underline-offset-2'>GitHub Repository</span></a> ]
+                    <span className='text-blue-400 font-semibold'>- Source Code: </span>
+                     <a href="https://github.com/uzma-a/eventify-repo" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-600 underline underline-offset-2'>GitHub Repository</span></a> 
                 </p>
             </div>
 
@@ -103,7 +103,7 @@ const MyProject = () => {
                 </p>
 
                 <p className="mt-6 font-medium">
-                    <span className="text-blue-400 font-semibold">- Source Code:</span>
+                    <span className="text-blue-400 font-semibold">- Source Code: </span>
                     <a href="https://github.com/uzma-a/fithubnewwebsite" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2">
                         GitHub Repository
                     </a>
@@ -148,13 +148,13 @@ const MyProject = () => {
                 </p>
 
                 <p className='mt-6 font-medium'>
-                    <span className='text-blue-400 font-semibold '>- Source Code : [</span> <span className='text-blue-600 underline underline-offset-2 '><a href="https://github.com/uzma-a/DevMock" target="_blank" rel="noopener noreferrer"></a></span>  <a href="https://github.com/uzma-a/DevMock" target="_blank" rel="noopener noreferrer"><span className='text-blue-600 underline underline-offset-2 '>GitHub Repository</span></a> <span className='text-blue-400 font-semibold '> ]</span> </p>
+                    <span className='text-blue-400 font-semibold '>- Source Code : </span> <span className='text-blue-600 underline underline-offset-2 '><a href="https://github.com/uzma-a/DevMock" target="_blank" rel="noopener noreferrer"></a></span>  <a href="https://github.com/uzma-a/DevMock" target="_blank" rel="noopener noreferrer"><span className='text-blue-600 underline underline-offset-2 '>GitHub Repository</span></a> <span className='text-blue-400 font-semibold '> </span> </p>
 
                 <p className='mt-6'>
-                    <span className='font-bold text-blue-500'>- Live Demo : [ <a href="https://dev-mock.vercel.app/" target="_blank" rel="noopener noreferrer" className=" font-medium text-blue-600 px-1 underline">
+                    <span className='font-bold text-blue-500'>- Live Demo :  <a href="https://dev-mock.vercel.app/" target="_blank" rel="noopener noreferrer" className=" font-medium text-blue-600 px-1 underline">
                         DevMock Website
                     </a>
-                        ]</span>
+                        </span>
                 </p>
 
             </div>
@@ -172,14 +172,14 @@ const MyProject = () => {
 
                 <p className='mt-6 '>
                     <span className='text-blue-400 font-semibold'>- Live Demo: </span>
-                    [ <a href="https://ui-micro-soft.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>Microsoft-Clone Website</span></a> ]
+                     <a href="https://ui-micro-soft.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-700 font-medium underline underline-offset-2'>Microsoft-Clone Website</span></a> 
                 </p>
 
                 <p className='mt-6 '>
-                    <span className='text-blue-400 font-semibold'>- Source Code:</span>
-                    [ <a href="https://github.com/uzma-a/Microsoft-UI-Clone" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository</span></a> ]
+                    <span className='text-blue-400 font-semibold'>- Source Code: </span>
+                     <a href="https://github.com/uzma-a/Microsoft-UI-Clone" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository </span></a> 
                 </p>
             </div>
 
@@ -208,14 +208,14 @@ const MyProject = () => {
 
                 <p className='mt-6 '>
                     <span className='text-blue-400 font-semibold'>- Live Demo: </span>
-                    [ <a href="https://gemini-ui.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>Gemini-Clone Website </span></a> ]
+                     <a href="https://gemini-ui.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-700 font-medium underline underline-offset-2'>Gemini-Clone Website </span></a> 
                 </p>
 
                 <p className='mt-6 '>
                     <span className='text-blue-400 font-semibold'>- Source Code: </span>
-                    [ <a href="https://github.com/uzma-a/Gemini-Clone" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository</span></a> ]
+                     <a href="https://github.com/uzma-a/Gemini-Clone" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository</span></a> 
                 </p>
             </div>
 

@@ -12,7 +12,7 @@ const Main = () => {
           <h1 className="text-5xl font-extrabold leading-tight">
             Hello, I'm <br />
             <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text animate-pulse">
-              Uzma
+              Uzma Aasiya
             </span>
           </h1>
           <p className="text-lg text-slate-300 font-medium">
@@ -21,7 +21,7 @@ const Main = () => {
           <div className="text-2xl font-semibold text-cyan-400">
             <Typewriter
               options={{
-                strings: ['Full Stack Web Developer', 'Front-end Developer'],
+                strings: ['Full Stack Web Developer', 'MERN Stack Developer', 'Front-end Developer'],
                 autoStart: true,
                 loop: true,
                 pauseFor: 1500,
@@ -29,7 +29,7 @@ const Main = () => {
             />
           </div>
           <button className="mt-4 px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold shadow-md hover:scale-105 transition-transform duration-300">
-            🚀 Uzma Aasia
+            🚀 Let's Explore
           </button>
         </div>
 

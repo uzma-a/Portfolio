@@ -1,104 +1,87 @@
 import React from 'react';
 
+const skillsData = [
+  {
+    title: 'Programming Languages',
+    color: 'from-purple-500 to-indigo-500',
+    icon: '💻',
+    skills: ['JavaScript', 'C++', 'Python'],
+  },
+  {
+    title: 'Frontend',
+    color: 'from-pink-500 to-red-400',
+    icon: '🎨',
+    skills: ['HTML5', 'CSS3', 'JavaScript', 'TailwindCSS', 'Bootstrap', 'React.js', 'Redux', 'Next.js'],
+  },
+  {
+    title: 'Backend',
+    color: 'from-green-500 to-emerald-400',
+    icon: '🛠️',
+    skills: ['Node.js', 'Express.js', 'Firebase Functions'],
+  },
+  {
+    title: 'Database',
+    color: 'from-yellow-500 to-orange-400',
+    icon: '🗄️',
+    skills: ['MongoDB', 'Firebase Firestore'],
+  },
+  {
+    title: 'UI/UX Design',
+    color: 'from-cyan-500 to-blue-400',
+    icon: '🎯',
+    skills: ['Figma', 'Responsive Design'],
+  },
+  {
+    title: 'Version Control',
+    color: 'from-teal-500 to-sky-400',
+    icon: '🔧',
+    skills: ['Git', 'GitHub'],
+  },
+  {
+    title: 'Additional Tools',
+    color: 'from-indigo-500 to-purple-400',
+    icon: '🧰',
+    skills: ['APIs', 'ChatGPT-3.5', 'Postman'],
+  },
+  {
+    title: 'Deployment & Hosting',
+    color: 'from-fuchsia-500 to-pink-400',
+    icon: '🚀',
+    skills: ['Netlify', 'Vercel', 'Render'],
+  },
+];
+
 const Skills = () => {
   return (
-    <div className='skill flex flex-col m-8 bg-slate-800 p-8  rounded-md md:m-20 gap-6'>
-      
-      <h1 className='text-5xl p-1 text-pink-100 font-semibold text-center  bg-gradient-to-r from-teal-400 to-blue-500'>Skills</h1>
-      <div className="boxes grid grid-col s-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-12">
-        <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col">
-          <img className='bg-cover w-full rounded-lg' src="https://img-c.udemycdn.com/course/750x422/4925142_c0ab.jpg" />
-          <div className="headings flex flex-col items-center p-6">
-            <h1 className='text-xl md:text-2xl text-center font-semibold h-16 flex items-center'>Frontend:</h1>
-            <ul className='list-disc mt-2 text-blue-950 font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>TailwindCSS</li>
-              <li>Bootstrap</li>
-             
-            </ul>
+    <div className="py-10 px-6 md:px-20 bg-slate-900 text-white min-h-screen">
+      <h2 className="text-5xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 drop-shadow-lg tracking-wide">
+  🚀 Skills
+</h2>
+
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {skillsData.map((section, index) => (
+          <div
+            key={index}
+            className={`rounded-2xl p-6 shadow-lg bg-gradient-to-br ${section.color} hover:scale-105 transition-transform`}
+          >
+            <div className="flex items-center gap-4 mb-4">
+              <span className="text-3xl">{section.icon}</span>
+              <h3 className="text-2xl font-semibold">{section.title}</h3>
+            </div>
+            <div className="flex flex-wrap gap-2 max-h-32 overflow-y-auto">
+              {section.skills.map((skill, i) => (
+                <span
+                  key={i}
+                  className="bg-white bg-opacity-20 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium shadow text-white border border-white border-opacity-30"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
-        <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col items-center">
-          <img className='bg-cover w-full rounded-lg' src="https://liveimages.algoworks.com/new-algoworks/wp-content/uploads/2016/03/05134032/Why-use-ExpressJS-over-NodeJS.jpeg" />
-          <div className="headings flex flex-col items-center p-6">
-            <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center text-center'>Backend:</h1>
-            <ul className='list-disc mt-2 text-blue-950 font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
-              <li>React.js</li>
-              <li>Next.js</li>
-              <li>Express.js</li>
-              <li>Firebase Functions</li>
-            </ul>
-          </div>
-        </div>
-        <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col items-center">
-          <img className='bg-cover w-full rounded-lg' src="https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/8960950/og_image/optimized/1015_Next.js_vs._React-_A_Comparative_Tutorial_Illustration_Brief_Social-d04df761f8138010d9d98703e77ce0e9.png" />
-          <div className="headings flex flex-col items-center p-6">
-            <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center text-center'>Frameworks:</h1>
-            <ul className='list-disc mt-2 text-blue-950  font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
-              <li>React.js</li>
-              <li>Redux</li>
-              <li>Next.js</li>
-            </ul>
-          </div>
-        </div>
-        <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col items-center">
-          <img className='bg-cover w-full rounded-lg' src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg" />
-          <div className="headings flex flex-col items-center p-6">
-            <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center text-center'>UI/UX Design:</h1>
-            <ul className='list-disc mt-2 text-blue-950  font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
-              <li>Figma</li>
-              <li>Responsive Design</li>
-            </ul>
-          </div>
-        </div>
-        <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col items-center">
-          <img className='bg-cover w-full rounded-lg' src="https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png" />
-          <div className="headings flex flex-col items-center p-6">
-            <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center text-center'>Database Management:</h1>
-            <ul className='list-disc mt-2 text-blue-950  font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
-              <li>MongoDB</li>
-              <li>Firebase Firestore</li>
-            </ul>
-          </div>
-        </div>
-        <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col items-center">
-          <img className='bg-cover w-full rounded-lg' src="https://img-c.udemycdn.com/course/480x270/3352204_9c9a_20.jpg" />
-          <div className="headings flex flex-col items-center p-6">
-            <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center text-center'>Version Control:</h1>
-            <ul className='list-disc mt-2 text-blue-950 font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
-              <li>Git</li>
-              <li>GitHub</li>
-            </ul>
-          </div>
-        </div>
-        <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col items-center">
-          <img className='bg-cover w-full rounded-lg' src="https://media.licdn.com/dms/image/v2/D4D12AQGzhMUpjQ1pDA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1681020631764?e=2147483647&v=beta&t=HCVdq4KyxMd1y8Yu7BR9QAUkwafbDP-sLwxu4E6BRm0" />
-          <div className="headings flex flex-col items-center p-6">
-            <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center text-center'>Additional Tools:</h1>
-            <ul className='list-disc mt-2 text-blue-950  font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
-              <li>Redux</li>
-              <li>APIs</li>
-              <li>ChatGPT-3.5</li>
-              <li>Postman</li>
-              
-            </ul>
-          </div>
-        </div>
-        <div data-aos="zoom-in" className="card rounded-lg bg-slate-200 bg-opacity-75 p-4 flex flex-col items-center">
-          <img className='bg-cover w-full rounded-lg' src="https://www.horilla.com/wp-content/uploads/2024/01/django-deployment-and-hosting-technical-step-by-step-guide.jpg" />
-          <div className="headings flex flex-col items-center p-6">
-            <h1 className='text-xl md:text-2xl font-semibold h-16 flex items-center te text-center'>Deployment and Hosting:</h1>
-            <ul className='list-disc mt-2 text-blue-950  font-semibold underline underline-offset-2 decoration-2 h-20 flex flex-col'>
-              <li>Netlify</li>
-              <li>Vercel</li>
-              <li>Render</li>
-            </ul>
-          </div>
-        </div>
+        ))}
       </div>
-      <hr className='border-0 h-0.5 bg-slate-200 m-8'/>
     </div>
   );
 };
