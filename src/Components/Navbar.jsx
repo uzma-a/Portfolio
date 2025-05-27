@@ -29,7 +29,7 @@ const Navbar = () => {
               </li>
 
               <li data-aos='fade-left' onClick={() => { setMenu("linkedin") }}>
-                <a to='/linkedin' href="https://www.linkedin.com/in/uzma-aashiya-700a46316/" target="_blank" rel="noopener noreferrer"><button className='text-black bg-slate-200 hover:bg-blue-500 hover:ring-gray-400  rounded-full flex  justify-center items-center ring-black ring-2 p-1.5'>
+                <a to='/linkedin' href="https://www.linkedin.com/in/uzma-aasiya-32189a367/" target="_blank" rel="noopener noreferrer"><button className='text-black bg-slate-200 hover:bg-blue-500 hover:ring-gray-400  rounded-full flex  justify-center items-center ring-black ring-2 p-1.5'>
 
                   <img src={linkedIn} alt="" />
                   <span className='font-bold px-2 text-black mt-1 '>LinkedIn</span>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
               <li onClick={() => { setMenu("linkedin") }}>
             
-                <a to='/linkedin' href="https://www.linkedin.com/in/uzma-aashiya-700a46316/" target="_blank" rel="noopener noreferrer"><button className='text-white bg-blue-500 m-3  rounded-full flex  justify-between items-center ring-white ring-2'>
+                <a to='/linkedin' href="https://www.linkedin.com/in/uzma-aasiya-32189a367/" target="_blank" rel="noopener noreferrer"><button className='text-white bg-blue-500 m-3  rounded-full flex  justify-between items-center ring-white ring-2'>
                 <button onClick={() => setIsOpen(false)}>
                   
                   <span className='font-bold px-2'>LinkedIn</span>

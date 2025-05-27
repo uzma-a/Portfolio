@@ -69,14 +69,51 @@ const MyProject = () => {
 
                 <p className='mt-6 font-semibold'>
                     <span className='text-blue-400 font-semibold'>- Live Demo: </span>
-                     <a href="https://eventify-frontend-hyvw.onrender.com/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-600 underline underline-offset-2'>Eventify Website</span></a> 
+                    <a href="https://eventify-frontend-hyvw.onrender.com/" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-600 underline underline-offset-2'>Eventify Website</span></a>
                 </p>
 
                 <p className='mt-6 font-semibold'>
                     <span className='text-blue-400 font-semibold'>- Source Code: </span>
-                     <a href="https://github.com/uzma-a/eventify-repo" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-600 underline underline-offset-2'>GitHub Repository</span></a> 
+                    <a href="https://github.com/uzma-a/eventify-repo" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-600 underline underline-offset-2'>GitHub Repository</span></a>
+                </p>
+            </div>
+
+
+            {/* Music-Player  */}
+            <div className="paragraph mt-20 text-slate-200 flex flex-col">
+                <h1 data-aos="fade-up" className="text-3xl text-center text-white font-bold">
+                    Project 3:
+                    <span data-aos="fade-right" className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent text-4xl"> Musicify </span>
+                </h1>
+
+                <p className="text-xl sm:text-lg text-center font-bold mt-1 bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
+                    Music Player
+                </p>
+
+                <p className="mt-8 text-lg font-medium">
+                    <span className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent font-semibold text-xl mr-1">Musicify</span>
+                    is a sleek, fully responsive <span className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent font-semibold text-xl">front-end music player</span> web app where users can explore and play songs from categories like Bollywood, Hollywood, and Party. It features a global audio player, recently played history, liked songs, and a smooth UI experience.
+                    Built with <span className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent font-semibold text-xl">React.js</span> and
+                    <span className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent font-semibold text-xl"> CSS</span>.
+                </p>
+
+
+
+
+                <p className="mt-6 font-medium">
+                    <span className="text-blue-400 font-semibold">- Source Code: </span>
+                    <a href="https://github.com/uzma-a/Music_Player" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2">
+                        GitHub Repository
+                    </a>
+                </p>
+
+                <p className="mt-6">
+                    <span className="font-bold text-blue-500">- Live Demo:</span>
+                    <a href="https://music-player-umber-eight-54.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 px-1 underline">
+                        Musicify App
+                    </a>
                 </p>
             </div>
 
@@ -84,7 +121,7 @@ const MyProject = () => {
             {/* FitHub  */}
             <div className="paragraph mt-20 text-slate-200 flex flex-col">
                 <h1 data-aos="fade-up" className="text-3xl text-center text-white font-bold">
-                    Project 3:
+                    Project 4:
                     <span data-aos="fade-right" className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-4xl"> FitHub </span>
                 </h1>
                 <p className="text-xl sm:text-lg text-center font-bold mt-1 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
@@ -121,7 +158,7 @@ const MyProject = () => {
             {/* DevMock */}
             <div className="paragraph mt-20 text-slate-200 flex flex-col">
 
-                <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>Project 4 : <span data-aos='fade-right' className='bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent text-4xl'>DevMock: </span></h1>
+                <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>Project 5 : <span data-aos='fade-right' className='bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent text-4xl'>DevMock: </span></h1>
                 <p className='text-xl sm:text-lg text-center font-bold mt-1 bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent'>Your Ultimate Developer Mock Interview Platform</p>
                 <p className='mt-8 text-lg font-medium'>
                     I developed <span className='bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>DevMock</span> as an <span className=' text-xl bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent font-semibold' >AI-powered</span> application to assist users in preparing for technical interviews.
@@ -154,7 +191,7 @@ const MyProject = () => {
                     <span className='font-bold text-blue-500'>- Live Demo :  <a href="https://dev-mock.vercel.app/" target="_blank" rel="noopener noreferrer" className=" font-medium text-blue-600 px-1 underline">
                         DevMock Website
                     </a>
-                        </span>
+                    </span>
                 </p>
 
             </div>
@@ -163,7 +200,7 @@ const MyProject = () => {
             {/* Microsoft-UI-Clone */}
             <div className="paragraph mt-20 flex flex-col text-slate-200">
                 <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>
-                    Project 5: <span data-aos='fade-right' className='bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent text-4xl'>Microsoft-UI-Clone</span>
+                    Project 6: <span data-aos='fade-right' className='bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent text-4xl'>Microsoft-UI-Clone</span>
                 </h1>
 
                 <p className='mt-8 text-lg font-medium'>
@@ -172,14 +209,14 @@ const MyProject = () => {
 
                 <p className='mt-6 '>
                     <span className='text-blue-400 font-semibold'>- Live Demo: </span>
-                     <a href="https://ui-micro-soft.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>Microsoft-Clone Website</span></a> 
+                    <a href="https://ui-micro-soft.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-700 font-medium underline underline-offset-2'>Microsoft-Clone Website</span></a>
                 </p>
 
                 <p className='mt-6 '>
                     <span className='text-blue-400 font-semibold'>- Source Code: </span>
-                     <a href="https://github.com/uzma-a/Microsoft-UI-Clone" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository </span></a> 
+                    <a href="https://github.com/uzma-a/Microsoft-UI-Clone" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository </span></a>
                 </p>
             </div>
 
@@ -187,7 +224,7 @@ const MyProject = () => {
             {/* Gemini-Clone */}
             <div className="paragraph mt-20 flex flex-col text-slate-200">
                 <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>
-                    Project 6: <span data-aos='fade-right' className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-4xl'>Gemini-Clone</span>
+                    Project 7: <span data-aos='fade-right' className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-4xl'>Gemini-Clone</span>
                 </h1>
 
                 <p className='mt-8 text-lg font-medium'>
@@ -208,14 +245,14 @@ const MyProject = () => {
 
                 <p className='mt-6 '>
                     <span className='text-blue-400 font-semibold'>- Live Demo: </span>
-                     <a href="https://gemini-ui.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>Gemini-Clone Website </span></a> 
+                    <a href="https://gemini-ui.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-700 font-medium underline underline-offset-2'>Gemini-Clone Website </span></a>
                 </p>
 
                 <p className='mt-6 '>
                     <span className='text-blue-400 font-semibold'>- Source Code: </span>
-                     <a href="https://github.com/uzma-a/Gemini-Clone" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository</span></a> 
+                    <a href="https://github.com/uzma-a/Gemini-Clone" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository</span></a>
                 </p>
             </div>
 

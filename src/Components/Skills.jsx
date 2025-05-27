@@ -5,7 +5,7 @@ const skillsData = [
     title: 'Programming Languages',
     color: 'from-purple-500 to-indigo-500',
     icon: '💻',
-    skills: ['JavaScript', 'C++', 'Python'],
+    skills: ['JavaScript', 'Python'],
   },
   {
     title: 'Frontend',
@@ -55,8 +55,8 @@ const Skills = () => {
   return (
     <div className="py-10 px-6 md:px-20 bg-slate-900 text-white min-h-screen">
       <h2 className="text-5xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 drop-shadow-lg tracking-wide">
-  🚀 Skills
-</h2>
+        🚀 Skills
+      </h2>
 
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
