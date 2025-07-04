@@ -49,7 +49,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative overflow-hidden'>
+    <div className='min-h-screen  bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative overflow-hidden'>
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full blur-3xl animate-pulse"></div>
@@ -86,7 +86,7 @@ const ContactMe = () => {
           </div>
 
           {/* Form Container */}
-          <div className="backdrop-blur-xl bg-white/10 rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20 transform hover:scale-105 transition-all duration-500">
+          <div className="backdrop-blur-xl bg-white/10 text-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20 transform hover:scale-105 transition-all duration-500">
             {!isSubmitted ? (
               <div className="space-y-8">
                 {/* Name Field */}
