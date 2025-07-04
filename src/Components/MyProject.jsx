@@ -41,6 +41,47 @@ const MyProject = () => {
                 </p>
             </div>
 
+            {/* MockMate */}
+
+            <div className="paragraph mt-20 text-slate-200 flex flex-col">
+                <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>
+                    Project 2: <span data-aos='fade-right' className='bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent text-4xl underline underline-offset-2 decoration-2'>MockMate</span>
+                </h1>
+
+                <p className="text-xl sm:text-lg text-center font-bold mt-1 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                    AI-Powered Mock Interview Platform
+                </p>
+
+                <p className='mt-6 font-medium text-lg'>
+                    MockMate is an <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>AI-driven mock interview platform</span> that helps users <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>practice technical interviews</span> through real-time voice interaction. Users can choose their <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>preferred tech stack</span>, answer questions via voice, and receive <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>AI-generated feedback</span> along with a final score.
+                </p>
+
+                <p className='mt-6 font-semibold'>
+                    <span className='text-blue-400 font-semibold'>- Technologies Used:</span> <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>Python, Django, React.js</span>, TailwindCSS, Web Speech API (STT & TTS), AOS
+                </p>
+
+                <p className='mt-6 font-semibold'>
+                    <span className='text-blue-400 font-semibold'>- Challenges:</span> Integrating <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>voice input/output</span> and providing <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>dynamic question flow</span>.
+                </p>
+
+                <p className='mt-6 font-semibold'>
+                    <span className='text-blue-400 font-semibold'>- Solution:</span> Utilized <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>Web Speech API</span> for seamless interaction and implemented a <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>scoring logic</span> based on user responses.
+                </p>
+
+                <p className='mt-6 font-semibold'>
+                    <span className='text-blue-400 font-semibold'>- Demo: </span>
+                    <a href="https://drive.google.com/file/d/1UaEjEqEZK3XxAHpcPkhbCTnjWFtgb5nI/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-600 underline underline-offset-2'>MockMate Demo</span></a>
+                </p>
+
+                <p className='mt-6 font-semibold'>
+                    <span className='text-blue-400 font-semibold'>- Source Code: </span>
+                    <a href="https://github.com/uzma-a/MockMate" target="_blank" rel="noopener noreferrer">
+                        <span className='text-blue-600 underline underline-offset-2'>GitHub Repository</span></a>
+                </p>
+            </div>
+
+
             {/* Eventify */}
             <div className="paragraph mt-20 text-slate-200 flex flex-col">
                 <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>
