@@ -29,7 +29,7 @@ const skillsData = [
     title: 'Database',
     color: 'from-yellow-500 via-orange-500 to-red-500',
     icon: '🗄️',
-    skills: ['MongoDB', 'Firebase Firestore'],
+    skills: ['MongoDB', 'SQL' ,'Firebase Firestore'],
     description: 'Database solutions for scalable data management',
     level: 80
   },
@@ -53,7 +53,7 @@ const skillsData = [
     title: 'Additional Tools',
     color: 'from-indigo-500 via-purple-500 to-pink-500',
     icon: '🧰',
-    skills: ['APIs', 'ChatGPT-3.5', 'Postman'],
+    skills: ['REST APIs', 'Redux', 'Postman', 'Socket.io'],
     description: 'Essential development and testing utilities',
     level: 87
   },
