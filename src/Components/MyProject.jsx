@@ -212,7 +212,7 @@ const ProjectsShowcase = () => {
       <div className="mt-20 text-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50">
-            <h3 className="text-3xl font-bold text-white mb-2">8+</h3>
+            <h3 className="text-3xl font-bold text-white mb-2">7+</h3>
             <p className="text-slate-300">Projects Completed</p>
           </div>
           <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50">
