@@ -1,309 +1,232 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { ExternalLink, Github, Code, Zap, Globe, Music, Dumbbell, Users, Bot, Monitor } from 'lucide-react';
 
-const MyProject = () => {
+const ProjectsShowcase = () => {
+  const [hoveredProject, setHoveredProject] = useState(null);
 
-    return (
-        <div className='bg-slate-800 text-lg p-4 md:p-6 lg:p-8 rounded-md m-4 md:m-8 lg:m-20 gap-4 md:gap-6 lg:gap-8'>
+  const projects = [
+    {
+      id: 1,
+      name: "My Portfolio",
+      title: "Personal Portfolio Website",
+      description: "A clean and responsive personal portfolio showcasing web development skills with smooth animations and modern design.",
+      skills: ["React.js", "TailwindCSS", "JavaScript", "AOS", "Responsive Design"],
+      icon: <Globe className="w-8 h-8" />,
+      gradient: "from-yellow-400 via-orange-400 to-red-400",
+      liveDemo: "https://uzma-portfolio-website.vercel.app/",
+      github: "https://github.com/uzma-a/portfolio",
+      category: "Frontend"
+    },
+    {
+      id: 2,
+      name: "MockMate",
+      title: "AI-Powered Mock Interview Platform",
+      description: "AI-driven platform for technical interview practice with real-time voice interaction and intelligent feedback system.",
+      skills: ["Python", "Django", "React.js", "TailwindCSS", "Web Speech API", "AI Integration"],
+      icon: <Bot className="w-8 h-8" />,
+      gradient: "from-blue-400 via-purple-400 to-pink-400",
+      liveDemo: "https://drive.google.com/file/d/1UaEjEqEZK3XxAHpcPkhbCTnjWFtgb5nI/view?usp=sharing",
+      github: "https://github.com/uzma-a/MockMate",
+      category: "Full Stack"
+    },
+    {
+      id: 3,
+      name: "Eventify",
+      title: "Event Management Platform",
+      description: "Full-stack platform for seamless event organization with secure authentication and ticket booking system.",
+      skills: ["MERN Stack", "JWT Auth", "OTP Verification", "TailwindCSS", "MongoDB"],
+      icon: <Users className="w-8 h-8" />,
+      gradient: "from-green-400 via-blue-400 to-purple-400",
+      liveDemo: "https://eventify-frontend-hyvw.onrender.com/",
+      github: "https://github.com/uzma-a/eventify-repo",
+      category: "Full Stack"
+    },
+    {
+      id: 4,
+      name: "Musicify",
+      title: "Music Player Application",
+      description: "Sleek and responsive music player with categorized playlists, global audio controls, and smooth user experience.",
+      skills: ["React.js", "CSS3", "JavaScript", "Audio API", "Responsive Design"],
+      icon: <Music className="w-8 h-8" />,
+      gradient: "from-red-400 via-pink-400 to-blue-400",
+      liveDemo: "https://music-player-umber-eight-54.vercel.app/",
+      github: "https://github.com/uzma-a/Music_Player",
+      category: "Frontend"
+    },
+    {
+      id: 5,
+      name: "FitHub",
+      title: "Modern Responsive Gym Website",
+      description: "Contemporary gym website with membership plans, trainer profiles, and registration functionality.",
+      skills: ["React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB"],
+      icon: <Dumbbell className="w-8 h-8" />,
+      gradient: "from-cyan-400 via-blue-400 to-indigo-400",
+      liveDemo: "https://fithub-website.netlify.app/",
+      github: "https://github.com/uzma-a/fithubnewwebsite",
+      category: "Full Stack"
+    },
+    {
+      id: 7,
+      name: "Microsoft UI Clone",
+      title: "Microsoft Website Clone",
+      description: "Pixel-perfect clone of Microsoft's official website with custom Microsoft 365 features and routing.",
+      skills: ["React.js", "React Router", "CSS3", "JavaScript", "UI/UX Design"],
+      icon: <Monitor className="w-8 h-8" />,
+      gradient: "from-teal-400 via-blue-400 to-indigo-400",
+      liveDemo: "https://ui-micro-soft.netlify.app/",
+      github: "https://github.com/uzma-a/Microsoft-UI-Clone",
+      category: "Frontend"
+    },
+    {
+      id: 8,
+      name: "Gemini Clone",
+      title: "AI Chat Interface Clone",
+      description: "Google Gemini clone with AI integration, dark mode, and responsive design for enhanced user experience.",
+      skills: ["React.js", "TailwindCSS", "Google Generative AI", "JavaScript", "API Integration"],
+      icon: <Zap className="w-8 h-8" />,
+      gradient: "from-gray-400 via-blue-400 to-purple-400",
+      liveDemo: "https://gemini-ui.netlify.app/",
+      github: "https://github.com/uzma-a/Gemini-Clone",
+      category: "Frontend"
+    }
+  ];
 
-            <h1 className='text-3xl md:text-4xl lg:text-5xl p-2 text-pink-100 font-semibold text-center bg-gradient-to-r from-teal-700 to-blue-700'>MY PROJECTS</h1>
-            {/* Portfolio */}
-            <div className="paragraph mt-20 text-slate-200 flex flex-col">
-                <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>
-                    Project 1 : <span data-aos='fade-right' className='bg-gradient-to-r from-yellow-500 to-blue-400 bg-clip-text text-transparent text-4xl underline underline-offset-2 decoration-2'>My Portfolio</span>
-                </h1>
+  const getCategoryColor = (category) => {
+    switch(category) {
+      case 'Full Stack': return 'bg-gradient-to-r from-emerald-500 to-teal-500';
+      case 'Frontend': return 'bg-gradient-to-r from-blue-500 to-purple-500';
+      default: return 'bg-gradient-to-r from-gray-500 to-slate-500';
+    }
+  };
 
-                <p className='mt-10 font-medium text-lg'>
-                    A clean and responsive personal portfolio to showcase my skills in <span className='bg-gradient-to-r from-yellow-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>web development</span>.
-                    It features sections like About, Skills, Projects, and Contact. Built using <span className='bg-gradient-to-r from-yellow-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>React.js</span> and <span className='bg-gradient-to-r from-yellow-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>Tailwind CSS</span>.
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 md:p-8">
+      {/* Header */}
+      <div className="text-center mb-16">
+        <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+          My Projects
+        </h1>
+        <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto">
+          Explore my journey through innovative web development projects
+        </p>
+        <div className="w-32 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto mt-6 rounded-full"></div>
+      </div>
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="group relative"
+            onMouseEnter={() => setHoveredProject(project.id)}
+            onMouseLeave={() => setHoveredProject(null)}
+          >
+            {/* Project Card */}
+            <div className={`
+              relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-6 h-full
+              border border-slate-700/50 transition-all duration-500
+              ${hoveredProject === project.id ? 'transform -translate-y-2 shadow-2xl shadow-blue-500/20' : ''}
+            `}>
+              {/* Category Badge */}
+              <div className={`
+                absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold text-white
+                ${getCategoryColor(project.category)}
+              `}>
+                {project.category}
+              </div>
+
+              {/* Project Icon */}
+              <div className={`
+                w-16 h-16 rounded-2xl bg-gradient-to-br ${project.gradient} 
+                flex items-center justify-center text-white mb-6
+                transition-transform duration-300 group-hover:scale-110
+              `}>
+                {project.icon}
+              </div>
+
+              {/* Project Info */}
+              <div className="space-y-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-2">{project.name}</h3>
+                  <p className="text-slate-300 font-medium text-sm">{project.title}</p>
+                </div>
+
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  {project.description}
                 </p>
 
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Technologies Used: </span> JavaScript, React.js, TailwindCSS, AOS, ChatGPT.
-                </p>
+                {/* Skills */}
+                <div className="space-y-2">
+                  <h4 className="text-white font-semibold text-sm">Technologies Used:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {project.skills.map((skill, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-xs font-medium
+                                 border border-slate-600/50 hover:border-blue-400/50 transition-colors"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
 
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Challenge: </span> Ensuring full responsiveness across all devices.
-                </p>
+                {/* Action Buttons */}
+                <div className="flex gap-3 pt-4">
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 
+                             text-white rounded-lg font-medium text-sm hover:from-blue-600 hover:to-purple-600 
+                             transition-all duration-300 flex-1 justify-center"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Live Demo
+                  </a>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 bg-slate-700 text-white rounded-lg 
+                             font-medium text-sm hover:bg-slate-600 transition-all duration-300"
+                  >
+                    <Github className="w-4 h-4" />
+                    Code
+                  </a>
+                </div>
+              </div>
 
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Solution: </span> Leveraged Tailwind CSS utilities and <span className='bg-gradient-to-r from-yellow-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>ChatGPT-3.5</span> for optimization.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Live Demo: </span>
-                    <a href="https://uzma-portfolio-website.vercel.app/" target="_blank" rel="noopener noreferrer" className='text-blue-600 underline underline-offset-2'>View Live</a>
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Source Code: </span>
-                    <a href="https://github.com/uzma-a/portfolio" target="_blank" rel="noopener noreferrer" className='text-blue-600 underline underline-offset-2'> GitHub Repository</a>
-                </p>
+              {/* Hover Effect Overlay */}
+              <div className={`
+                absolute inset-0 rounded-2xl bg-gradient-to-br ${project.gradient} opacity-0 
+                transition-opacity duration-300 pointer-events-none
+                ${hoveredProject === project.id ? 'opacity-5' : ''}
+              `}></div>
             </div>
+          </div>
+        ))}
+      </div>
 
-            {/* MockMate */}
-
-            <div className="paragraph mt-20 text-slate-200 flex flex-col">
-                <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>
-                    Project 2: <span data-aos='fade-right' className='bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent text-4xl underline underline-offset-2 decoration-2'>MockMate</span>
-                </h1>
-
-                <p className="text-xl sm:text-lg text-center font-bold mt-1 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    AI-Powered Mock Interview Platform
-                </p>
-
-                <p className='mt-6 font-medium text-lg'>
-                    MockMate is an <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>AI-driven mock interview platform</span> that helps users <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>practice technical interviews</span> through real-time voice interaction. Users can choose their <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>preferred tech stack</span>, answer questions via voice, and receive <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>AI-generated feedback</span> along with a final score.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Technologies Used:</span> <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>Python, Django, React.js</span>, TailwindCSS, Web Speech API (STT & TTS), AOS
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Challenges:</span> Integrating <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>voice input/output</span> and providing <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>dynamic question flow</span>.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Solution:</span> Utilized <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>Web Speech API</span> for seamless interaction and implemented a <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>scoring logic</span> based on user responses.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Demo: </span>
-                    <a href="https://drive.google.com/file/d/1UaEjEqEZK3XxAHpcPkhbCTnjWFtgb5nI/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-600 underline underline-offset-2'>MockMate Demo</span></a>
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Source Code: </span>
-                    <a href="https://github.com/uzma-a/MockMate" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-600 underline underline-offset-2'>GitHub Repository</span></a>
-                </p>
-            </div>
-
-
-            {/* Eventify */}
-            <div className="paragraph mt-20 text-slate-200 flex flex-col">
-                <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>
-                    Project 2: <span data-aos='fade-right' className='bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent text-4xl underline underline-offset-2 decoration-2'>Eventify</span>
-                </h1>
-
-                <p className="text-xl sm:text-lg text-center font-bold mt-1 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                    Event Management Platform
-                </p>
-
-                <p className='mt-6 font-medium text-lg'>
-                    Eventify is a <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>Full-stack event management platform</span>  designed to streamline <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'> event organization</span>. It features a secure <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>user authentication</span> system with <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'> OTP verification</span> and password recovery, allowing users to seamlessly <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>create</span>, <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'> manage</span>, and <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>book event tickets</span> with ease.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Technologies Used:</span> <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>MERN Stack</span>, AOS, TailwindCSS,
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Challenges:</span> Implementing <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>secure authentication</span> and smooth ticket booking.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Solution:</span> Used <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>JWT authentication</span>, <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>OTP verification</span>, and optimized <span className='font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent'>database</span> queries for efficiency.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Live Demo: </span>
-                    <a href="https://eventify-frontend-hyvw.onrender.com/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-600 underline underline-offset-2'>Eventify Website</span></a>
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Source Code: </span>
-                    <a href="https://github.com/uzma-a/eventify-repo" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-600 underline underline-offset-2'>GitHub Repository</span></a>
-                </p>
-            </div>
-
-
-            {/* Music-Player  */}
-            <div className="paragraph mt-20 text-slate-200 flex flex-col">
-                <h1 data-aos="fade-up" className="text-3xl text-center text-white font-bold">
-                    Project 3:
-                    <span data-aos="fade-right" className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent text-4xl"> Musicify </span>
-                </h1>
-
-                <p className="text-xl sm:text-lg text-center font-bold mt-1 bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
-                    Music Player
-                </p>
-
-                <p className="mt-8 text-lg font-medium">
-                    <span className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent font-semibold text-xl mr-1">Musicify</span>
-                    is a sleek, fully responsive <span className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent font-semibold text-xl">front-end music player</span> web app where users can explore and play songs from categories like Bollywood, Hollywood, and Party. It features a global audio player, recently played history, liked songs, and a smooth UI experience.
-                    Built with <span className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent font-semibold text-xl">React.js</span> and
-                    <span className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent font-semibold text-xl"> CSS</span>.
-                </p>
-
-
-
-
-                <p className="mt-6 font-medium">
-                    <span className="text-blue-400 font-semibold">- Source Code: </span>
-                    <a href="https://github.com/uzma-a/Music_Player" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2">
-                        GitHub Repository
-                    </a>
-                </p>
-
-                <p className="mt-6">
-                    <span className="font-bold text-blue-500">- Live Demo:</span>
-                    <a href="https://music-player-umber-eight-54.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 px-1 underline">
-                        Musicify App
-                    </a>
-                </p>
-            </div>
-
-
-            {/* FitHub  */}
-            <div className="paragraph mt-20 text-slate-200 flex flex-col">
-                <h1 data-aos="fade-up" className="text-3xl text-center text-white font-bold">
-                    Project 4:
-                    <span data-aos="fade-right" className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent text-4xl"> FitHub </span>
-                </h1>
-                <p className="text-xl sm:text-lg text-center font-bold mt-1 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                    Modern Responsive Gym Website
-                </p>
-                <p className="mt-8 text-lg font-medium">
-                    <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl">FitHub </span>
-                    is a modern, fully responsive gym website with sections like Home, Services, Trainers, Membership Plans, and Contact. It features
-                    an engaging UI and a <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl">Register</span> functionality.
-                    Built with <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl">React.js</span> and
-                    <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent font-semibold text-xl"> Tailwind CSS</span>.
-                </p>
-
-                <p className="mt-6 font-semibold">
-                    <span className="text-cyan-300 font-semibold">- Technologies Used:</span> JavaScript, React.js, TailwindCSS, Node.js, Express.js, MongoDB.
-                </p>
-
-                <p className="mt-6 font-medium">
-                    <span className="text-blue-400 font-semibold">- Source Code: </span>
-                    <a href="https://github.com/uzma-a/fithubnewwebsite" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline underline-offset-2">
-                        GitHub Repository
-                    </a>
-                </p>
-
-                <p className="mt-6">
-                    <span className="font-bold text-blue-500">- Live Demo:</span>
-                    <a href="https://fithub-website.netlify.app/" target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 px-1 underline">
-                        FitHub Website
-                    </a>
-                </p>
-            </div>
-
-
-            {/* DevMock */}
-            <div className="paragraph mt-20 text-slate-200 flex flex-col">
-
-                <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>Project 5 : <span data-aos='fade-right' className='bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent text-4xl'>DevMock: </span></h1>
-                <p className='text-xl sm:text-lg text-center font-bold mt-1 bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent'>Your Ultimate Developer Mock Interview Platform</p>
-                <p className='mt-8 text-lg font-medium'>
-                    I developed <span className='bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>DevMock</span> as an <span className=' text-xl bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent font-semibold' >AI-powered</span> application to assist users in preparing for technical interviews.
-                    This project generates dynamic and relevant coding questions in topics such as
-                    <span className='bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl px-1'>JavaScript</span>,
-                    <span className='bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl px-1'>React.js</span>, and
-                    <span className='bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl px-1'>Node.js</span>.
-                    DevMock demonstrates my ability to integrate modern technologies and highlights my expertise in building practical solutions.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Technologies Used: </span>
-                    HTML5, CSS3, JavaScript, React.js, TailwindCSS, Node.js, Express.js.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Challenges: </span>
-                    Implementing dynamic question generation.
-                </p>
-
-                <p className='mt-6 font-semibold'>
-                    <span className='text-blue-400 font-semibold'>- Solution: </span>
-                    Utilized <span className='bg-gradient-to-r from-purple-500 to-blue-400 bg-clip-text text-transparent font-semibold text-xl'>ChatGPT-3.5</span> for AI-powered question generation, ensuring the app meets its core functionality requirements effectively.
-                </p>
-
-                <p className='mt-6 font-medium'>
-                    <span className='text-blue-400 font-semibold '>- Source Code : </span> <span className='text-blue-600 underline underline-offset-2 '><a href="https://github.com/uzma-a/DevMock" target="_blank" rel="noopener noreferrer"></a></span>  <a href="https://github.com/uzma-a/DevMock" target="_blank" rel="noopener noreferrer"><span className='text-blue-600 underline underline-offset-2 '>GitHub Repository</span></a> <span className='text-blue-400 font-semibold '> </span> </p>
-
-                <p className='mt-6'>
-                    <span className='font-bold text-blue-500'>- Live Demo :  <a href="https://dev-mock.vercel.app/" target="_blank" rel="noopener noreferrer" className=" font-medium text-blue-600 px-1 underline">
-                        DevMock Website
-                    </a>
-                    </span>
-                </p>
-
-            </div>
-
-
-            {/* Microsoft-UI-Clone */}
-            <div className="paragraph mt-20 flex flex-col text-slate-200">
-                <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>
-                    Project 6: <span data-aos='fade-right' className='bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent text-4xl'>Microsoft-UI-Clone</span>
-                </h1>
-
-                <p className='mt-8 text-lg font-medium'>
-                    Built a <span className='font-bold bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent'>Microsoft UI</span> clone to refine my <span className='font-bold bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent'>front-end</span> skills and master <span className='font-bold bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent'>React routing</span>. The homepage mirrors <span className='font-bold bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent'>Microsoft's official site</span>, with a custom <span className='font-bold bg-gradient-to-r from-teal-500 to-blue-500 bg-clip-text text-transparent'>Microsoft 365</span> feature in the navbar, enhancing functionality and UI accuracy.
-                </p>
-
-                <p className='mt-6 '>
-                    <span className='text-blue-400 font-semibold'>- Live Demo: </span>
-                    <a href="https://ui-micro-soft.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>Microsoft-Clone Website</span></a>
-                </p>
-
-                <p className='mt-6 '>
-                    <span className='text-blue-400 font-semibold'>- Source Code: </span>
-                    <a href="https://github.com/uzma-a/Microsoft-UI-Clone" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository </span></a>
-                </p>
-            </div>
-
-
-            {/* Gemini-Clone */}
-            <div className="paragraph mt-20 flex flex-col text-slate-200">
-                <h1 data-aos='fade-up' className='text-3xl text-center text-white font-bold'>
-                    Project 7: <span data-aos='fade-right' className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-4xl'>Gemini-Clone</span>
-                </h1>
-
-                <p className='mt-8 text-lg font-medium'>
-                    Built a <span className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-xl font-semibold'>Gemini clone</span> to gain hands-on experience with <span className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-xl font-semibold'>APIs</span> and <span className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-xl font-semibold'>AI technologies</span>. Integrated <span className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-xl font-semibold'>Google Generative AI</span> for dynamic responses and added a <span className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-xl font-semibold'>dark mode</span> for an enhanced UI.
-                </p>
-
-                <p className='mt-6 font-medium'>
-                    <span className='text-blue-400 font-semibold'>- Technologies Used:</span> React.js, Tailwind CSS, JavaScript, HTML5, CSS3, <span className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-xl font-semibold'>Google Generative AI (API Key)</span>.
-                </p>
-
-                <p className='mt-6 font-medium'>
-                    <span className='text-blue-400 font-semibold'>- Challenges:</span> Ensuring seamless <span className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-xl font-semibold'>AI integration</span>  while maintaining a smooth, <span className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-xl font-semibold'>adaptive UI</span>.
-                </p>
-
-                <p className='mt-6 font-medium'>
-                    <span className='text-blue-400 font-semibold'>- Solution:</span> Used Tailwind CSS for a responsive design and integrated <span className='bg-gradient-to-r from-zinc-400 to-blue-500 bg-clip-text text-transparent text-xl font-semibold'>Google Generative AI</span> to enhance interactivity.
-                </p>
-
-                <p className='mt-6 '>
-                    <span className='text-blue-400 font-semibold'>- Live Demo: </span>
-                    <a href="https://gemini-ui.netlify.app/" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>Gemini-Clone Website </span></a>
-                </p>
-
-                <p className='mt-6 '>
-                    <span className='text-blue-400 font-semibold'>- Source Code: </span>
-                    <a href="https://github.com/uzma-a/Gemini-Clone" target="_blank" rel="noopener noreferrer">
-                        <span className='text-blue-700 font-medium underline underline-offset-2'>GitHub Repository</span></a>
-                </p>
-            </div>
-
-
-
-            <hr className='border-0 h-0.5 bg-slate-800 m-8' />
-
-
+      {/* Footer Stats */}
+      <div className="mt-20 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50">
+            <h3 className="text-3xl font-bold text-white mb-2">8+</h3>
+            <p className="text-slate-300">Projects Completed</p>
+          </div>
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50">
+            <h3 className="text-3xl font-bold text-white mb-2">15+</h3>
+            <p className="text-slate-300">Technologies Used</p>
+          </div>
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50">
+            <h3 className="text-3xl font-bold text-white mb-2">100%</h3>
+            <p className="text-slate-300">Responsive Design</p>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default MyProject
+export default ProjectsShowcase;
