@@ -22,7 +22,7 @@ const ProjectsShowcase = () => {
       name: "MockMate",
       title: "AI-Powered Mock Interview Platform",
       description: "AI-driven platform for technical interview practice with real-time voice interaction and intelligent feedback system.",
-      skills: ["Python", "Django", "React.js", "TailwindCSS", "Web Speech API", "AI Integration"],
+      skills: ["Python", "Django", "React.js", "TailwindCSS", "Web Speech API", "AI Integration", "ChatGPT"],
       icon: <Bot className="w-8 h-8" />,
       gradient: "from-blue-400 via-purple-400 to-pink-400",
       liveDemo: "https://drive.google.com/file/d/1UaEjEqEZK3XxAHpcPkhbCTnjWFtgb5nI/view?usp=sharing",
@@ -57,11 +57,11 @@ const ProjectsShowcase = () => {
       id: 5,
       name: "FitHub",
       title: "Modern Responsive Gym Website",
-      description: "Contemporary gym website with membership plans, trainer profiles, and registration functionality.",
-      skills: ["React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB"],
+      description: "Contemporary gym website with membership plans, registration functionality, and appointment booking system.",
+      skills: ["React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Claude ai"],
       icon: <Dumbbell className="w-8 h-8" />,
       gradient: "from-cyan-400 via-blue-400 to-indigo-400",
-      liveDemo: "https://fithub-website.netlify.app/",
+      liveDemo: "https://fithub-new-frontend.onrender.com/",
       github: "https://github.com/uzma-a/fithubnewwebsite",
       category: "Full Stack"
     },
@@ -92,7 +92,7 @@ const ProjectsShowcase = () => {
   ];
 
   const getCategoryColor = (category) => {
-    switch(category) {
+    switch (category) {
       case 'Full Stack': return 'bg-gradient-to-r from-emerald-500 to-teal-500';
       case 'Frontend': return 'bg-gradient-to-r from-blue-500 to-purple-500';
       default: return 'bg-gradient-to-r from-gray-500 to-slate-500';
