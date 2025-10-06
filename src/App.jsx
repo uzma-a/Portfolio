@@ -13,6 +13,7 @@ import Main from './Components/Main';
 import Plans from './Components/Plans';
 import { useState, useEffect } from 'react';
 
+
 function App() {
   // Initialize AOS
   useEffect(() => {
@@ -59,9 +60,11 @@ function App() {
               />
               {/* Other Pages */}
               <Route path="/contactme" element={<ContactMe />} />
+              
+              
             </Routes>
             {/* Footer for all pages, only shows after loading */}
-            <Footer />
+            <Footer/>
           </>
         )}
       </div>

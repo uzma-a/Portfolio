@@ -21,7 +21,7 @@ const skillsData = [
     title: 'Backend',
     color: 'from-green-500 via-emerald-500 to-teal-500',
     icon: '🛠️',
-    skills: ['Node.js', 'Express.js', 'Firebase Functions'],
+    skills: ['Node.js', 'Express.js', 'Django', 'Django REST Framework', 'Firebase Functions'],
     description: 'Server-side technologies for robust applications',
     level: 85
   },
@@ -29,7 +29,7 @@ const skillsData = [
     title: 'Database',
     color: 'from-yellow-500 via-orange-500 to-red-500',
     icon: '🗄️',
-    skills: ['MongoDB', 'SQL' ,'Firebase Firestore'],
+    skills: ['MongoDB', 'MySQL' ,'Firebase Firestore'],
     description: 'Database solutions for scalable data management',
     level: 80
   },
@@ -69,7 +69,7 @@ const skillsData = [
     title: 'Artificial Intelligence',
     color: 'from-violet-500 via-fuchsia-500 to-pink-500',
     icon: '🤖',
-    skills: ['Claude', 'ChatGPT', 'Cursor AI'],
+    skills: ['Claude', 'ChatGPT', 'Cursor AI', 'AssemblyAI'],
     description: 'AI-powered tools for enhanced productivity',
     level: 83
   },

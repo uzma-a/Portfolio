@@ -22,31 +22,31 @@ const ProjectsShowcase = () => {
       name: "MockMate",
       title: "AI-Powered Mock Interview Platform",
       description: "AI-driven platform for technical interview practice with real-time voice interaction and intelligent feedback system.",
-      skills: ["Python", "Django", "React.js", "TailwindCSS", "Web Speech API", "AI Integration", "ChatGPT"],
+      skills: ["Python", "Django", "Google GenAI", "Gemini 2.5 Flash", "pyttsx3", "React.js", "Bootstrap", "Assembly API"],
       icon: <Bot className="w-8 h-8" />,
       gradient: "from-blue-400 via-purple-400 to-pink-400",
       liveDemo: "https://drive.google.com/file/d/1UaEjEqEZK3XxAHpcPkhbCTnjWFtgb5nI/view?usp=sharing",
       github: "https://github.com/uzma-a/MockMate",
       category: "Full Stack"
     },
-    {
+  {
       id: 3,
-      name: "Eventify",
-      title: "Event Management Platform",
-      description: "Full-stack platform for seamless event organization with secure authentication and ticket booking system.",
-      skills: ["MERN Stack", "JWT Auth", "OTP Verification", "TailwindCSS", "MongoDB"],
-      icon: <Users className="w-8 h-8" />,
-      gradient: "from-green-400 via-blue-400 to-purple-400",
-      liveDemo: "https://eventify-frontend-hyvw.onrender.com/",
-      github: "https://github.com/uzma-a/eventify-repo",
-      category: "Full Stack"
+      name: "Study Buddy",
+      title: "Personal AI-powered notes & quiz generator.",
+      description: "Study Buddy is your personal AI-powered notes & quiz generator. Create summaries, quizzes, and learn smarter every day.",
+      skills: ["Gemini API", "Gemini 2.5 Flash", "Clerk", "API Integration" ,"React.js", "JavaScript", "jsPDF", "React Context API"],
+      icon: <Zap className="w-8 h-8" />,
+      gradient: "from-gray-400 via-blue-400 to-purple-400",
+      liveDemo: "https://ai-studybuddy.vercel.app/",
+      github: "https://github.com/uzma-a/Study-Buddy",
+      category: "Frontend"
     },
     {
       id: 4,
       name: "Musicify",
       title: "Music Player Application",
       description: "Sleek and responsive music player with categorized playlists, global audio controls, and smooth user experience.",
-      skills: ["React.js", "CSS3", "JavaScript", "Audio API", "Responsive Design"],
+      skills: ["React.js", "CSS3", "JavaScript", "ChatGPT", "Responsive Design"],
       icon: <Music className="w-8 h-8" />,
       gradient: "from-red-400 via-pink-400 to-blue-400",
       liveDemo: "https://music-player-umber-eight-54.vercel.app/",
@@ -65,29 +65,17 @@ const ProjectsShowcase = () => {
       github: "https://github.com/uzma-a/fithubnewwebsite",
       category: "Full Stack"
     },
-    {
-      id: 7,
-      name: "Microsoft UI Clone",
-      title: "Microsoft Website Clone",
-      description: "Pixel-perfect clone of Microsoft's official website with custom Microsoft 365 features and routing.",
-      skills: ["React.js", "React Router", "CSS3", "JavaScript", "UI/UX Design"],
-      icon: <Monitor className="w-8 h-8" />,
-      gradient: "from-teal-400 via-blue-400 to-indigo-400",
-      liveDemo: "https://ui-micro-soft.netlify.app/",
-      github: "https://github.com/uzma-a/Microsoft-UI-Clone",
-      category: "Frontend"
-    },
-    {
+      {
       id: 8,
-      name: "Gemini Clone",
-      title: "AI Chat Interface Clone",
-      description: "Google Gemini clone with AI integration, dark mode, and responsive design for enhanced user experience.",
-      skills: ["React.js", "TailwindCSS", "Google Generative AI", "JavaScript", "API Integration"],
-      icon: <Zap className="w-8 h-8" />,
-      gradient: "from-gray-400 via-blue-400 to-purple-400",
-      liveDemo: "https://gemini-ui.netlify.app/",
-      github: "https://github.com/uzma-a/Gemini-Clone",
-      category: "Frontend"
+      name: "Eventify",
+      title: "Event Management Platform",
+      description: "Full-stack platform for seamless event organization with secure authentication and ticket booking system.",
+      skills: ["MERN Stack", "JWT Auth", "OTP Verification", "TailwindCSS", "MongoDB"],
+      icon: <Users className="w-8 h-8" />,
+      gradient: "from-green-400 via-blue-400 to-purple-400",
+      liveDemo: "https://eventify-frontend-hyvw.onrender.com/",
+      github: "https://github.com/uzma-a/eventify-repo",
+      category: "Full Stack"
     }
   ];
 
