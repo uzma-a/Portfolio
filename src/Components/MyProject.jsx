@@ -25,7 +25,7 @@ const ProjectsShowcase = () => {
       skills: ["Python", "Django", "Google GenAI", "Gemini 2.5 Flash", "pyttsx3", "React.js", "Bootstrap", "Assembly API"],
       icon: <Bot className="w-8 h-8" />,
       gradient: "from-blue-400 via-purple-400 to-pink-400",
-      liveDemo: "https://drive.google.com/file/d/1UaEjEqEZK3XxAHpcPkhbCTnjWFtgb5nI/view?usp=sharing",
+      liveDemo: "https://mockmate-interview.vercel.app/",
       github: "https://github.com/uzma-a/MockMate",
       category: "Full Stack"
     },

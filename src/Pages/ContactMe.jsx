@@ -77,7 +77,7 @@ const ContactMe = () => {
         <div className="w-full max-w-2xl">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent mb-6 animate-pulse">
+            <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent mb-6 animate-pulse">
               Let's Connect
             </h1>
             <p className="text-xl text-gray-300 max-w-md mx-auto leading-relaxed">
@@ -86,7 +86,7 @@ const ContactMe = () => {
           </div>
 
           {/* Form Container */}
-          <div className="backdrop-blur-xl bg-white/10 text-gray-800 rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20 transform hover:scale-105 transition-all duration-500">
+          <div className="backdrop-blur-xl bg-white/10 text-gray-800 rounded-3xl p-4 md:p-7 shadow-2xl border border-white/20 transform hover:scale-105 transition-all duration-500">
             {!isSubmitted ? (
               <div className="space-y-8">
                 {/* Name Field */}
@@ -175,7 +175,7 @@ const ContactMe = () => {
             <p className="text-gray-400 text-sm">
               Prefer email? Reach me directly at{' '}
               <a href="mailto:your@email.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-                your@email.com
+                uzmaaasia444@email.com
               </a>
             </p>
           </div>
