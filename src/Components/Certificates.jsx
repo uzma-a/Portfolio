@@ -39,20 +39,8 @@ const Certificates = () => {
       skills: ["AI Agents", "Google ADK", "Tool Calling", "Multi-Agent Systems", "Capstone Project"],
       gradient: "from-cyan-400 via-purple-500 to-pink-500",
       icon: <Sparkles className="w-6 h-6 text-cyan-400" />,
-      verifyLink: "https://kaggle.com"
+      verifyLink: "https://www.kaggle.com/certification/badges/uzmaaasiya/105"
     },
-    {
-      id: 4,
-      title: "Startup School: Prompt to Prototype",
-      issuer: "Google for Startups",
-      date: "Issued Dec 2025",
-      type: "AI & Agents",
-      description: "Fast-paced program focused on converting concepts into functional AI prototypes using advanced prompt engineering techniques and Google Generative AI Studio.",
-      skills: ["Prompt Engineering", "Generative AI Studio", "Prototyping", "LLM Workflows"],
-      gradient: "from-purple-400 via-pink-500 to-rose-500",
-      icon: <ShieldCheck className="w-6 h-6 text-purple-400" />,
-      verifyLink: "https://startup.google.com"
-    }
   ];
 
   const filters = ['All', 'Specialization', 'AI & Agents'];
