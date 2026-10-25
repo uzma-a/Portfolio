@@ -28,7 +28,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: <Github className="w-5 h-5" />, href: "https://github.com/uzma-a", label: "GitHub" },
     { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/uzma-aasiya-32189a367/", label: "LinkedIn" },
-    { icon: <Twitter className="w-5 h-5" />, href: "https://twitter.com/uzmaaasia", label: "Twitter" },
+    { icon: <Twitter className="w-5 h-5" />, href: "https://x.com/UzmaAasia", label: "X" },
   ];
 
   return (

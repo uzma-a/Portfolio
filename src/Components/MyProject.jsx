@@ -251,24 +251,13 @@ const ProjectsShowcase = () => {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
 
-            <a
-              href="https://www.kaggle.com/uzmaaasiya"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600
-                        rounded-2xl text-white font-bold text-lg shadow-lg shadow-cyan-500/40
-                        hover:shadow-xl hover:shadow-cyan-500/60 transition-all duration-300 hover:scale-105"
-            >
-              <Trophy className="w-6 h-6" />
-              <span>ML Competitions on Kaggle</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </a>
+           
           </div>
 
           {/* Stats Footer */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-cyan-500/30 transition-all duration-300">
-              <h3 className="text-4xl font-black text-cyan-400 mb-2">7+</h3>
+              <h3 className="text-4xl font-black text-cyan-400 mb-2">5+</h3>
               <p className="text-gray-400 font-medium">Production AI & Web Projects</p>
             </div>
             <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:border-purple-500/30 transition-all duration-300">
