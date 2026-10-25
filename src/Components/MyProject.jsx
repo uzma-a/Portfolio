@@ -85,17 +85,7 @@ const ProjectsShowcase = () => {
       github: "https://github.com/uzma-a/Study-Buddy",
       category: "Frontend"
     },
-    {
-      id: 7,
-      name: "FitHub",
-      description: "Production MERN-stack fitness platform featuring tiered membership management, secure user authentication, appointment scheduling, and responsive UI.",
-      skills: ["MongoDB", "Express.js", "React.js", "Node.js", "TailwindCSS"],
-      icon: <Dumbbell className="w-8 h-8" />,
-      gradient: "from-cyan-400 via-blue-500 to-indigo-600",
-      liveDemo: "https://fithub-new-frontend.onrender.com/",
-      github: "https://github.com/uzma-a/fithubnewwebsite",
-      category: "Full Stack"
-    },
+   
   ];
 
   const categories = ['All', 'AI Application', 'Full Stack', 'Frontend'];
